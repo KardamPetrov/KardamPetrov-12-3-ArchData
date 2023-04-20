@@ -1,0 +1,25 @@
+﻿<Window x:Class="KardamPetrov_12_3_ArchData.Saved"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KardamPetrov_12_3_ArchData"
+        mc:Ignorable="d"
+        Title="Saved" Height="450" Width="800">
+    <Grid>
+        <Border Background="#FF2A2A2A" CornerRadius="20" Margin="10,10,9.6,10" Grid.ColumnSpan="2">
+            <StackPanel Background="#FF2A2A2A">
+                <Button Margin="0,20,0.333,0" Height="41" BorderBrush="#FF2A2A2A" Background="#FF2A2A2A">
+                    <StackPanel Orientation="Horizontal" Background="#FF2A2A2A" Width="323" >
+                        <Image Source="D:\ArchData\5776773.png" Height="36" Width="64" RenderTransformOrigin="1.443,0.564" />
+                        <TextBox Height="24" TextWrapping="Wrap" Text="KARDAM.PETROV-12/3" Margin="0,0,0,0" Width="216" Foreground="White" Background="#FF2A2A2A" BorderBrush="#FF2A2A2A" FontFamily="Consolas" FontSize="20"/>
+                    </StackPanel>
+                </Button>
+                <Label Content="&#xA;SAVED" Foreground="White" FontSize="40" HorizontalAlignment="Center" Margin="330,0,330,0" Width="131" Height="156" FontFamily="Corbel Light"/>
+                <Button Content="Button" Click="Button_Click"/>
+
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
