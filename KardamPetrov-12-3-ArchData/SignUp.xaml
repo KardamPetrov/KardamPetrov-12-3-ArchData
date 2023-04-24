@@ -21,18 +21,18 @@
                 <Label Content="SIGN UP" Foreground="White" FontSize="30" HorizontalAlignment="Center" Margin="60,30,60.2,0" Height="49" FontFamily="Corbel Light"/>
 
                 <Label Content="Username" Foreground="White" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtUsername" Background="White" Foreground="white" FontSize="12" Margin="300,0,300,0" Height="16"/>
+                <TextBox x:Name="txtUsername" Background="White" Foreground="black" FontSize="12" Margin="300,0,300,0" Height="16"/>
 
                 <Label Content="Email" Foreground="White" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtEmail" Background="White" Foreground="white" FontSize="12" Margin="300,0,300,0" Height="18"/>
+                <TextBox x:Name="txtEmail" Background="White" Foreground="black" FontSize="12" Margin="300,0,300,0" Height="18"/>
 
                 <Label Content="Password" Foreground="White" HorizontalAlignment="Center"/>
-                <PasswordBox x:Name="PasswordBox" Background="White" Foreground="white" FontSize="12" Margin="300,0,300,0" Height="20"/>
+                <PasswordBox x:Name="PasswordBox" Background="White" Foreground="black" FontSize="12" Margin="300,0,300,0" Height="20"/>
 
                 <Label Content="Repeat Password" Foreground="White" HorizontalAlignment="Center"/>
-                <PasswordBox x:Name="RePasswordBox" Background="White" Foreground="white" FontSize="12" Margin="300,0,300,0" Height="19"/>
+                <PasswordBox x:Name="RePasswordBox" Background="White" Foreground="black" FontSize="12" Margin="300,0,300,0" Height="19"/>
 
-                <Button x:Name="Submit_1" Content="Submit" Margin="320,20,320,90" Background="White" Foreground="Black" FontSize="18" FontFamily="Consolas" />
+                <Button x:Name="Submit_1" Content="Submit" Margin="320,20,320,90" Background="White" Foreground="Black" FontSize="18" FontFamily="Consolas" Click="Submit_1_Click" />
             </StackPanel>
         </Border>
     </Grid>

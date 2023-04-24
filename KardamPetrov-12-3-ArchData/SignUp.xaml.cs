@@ -30,7 +30,7 @@ namespace KardamPetrov_12_3_ArchData
             OpenMainWindow.Show();
             this.Close();
         }
-        private void Submit_Click(object sender, RoutedEventArgs e)
+        private void Submit_1_Click(object sender, RoutedEventArgs e)
         {
             if (PasswordBox.Password.Length < 10 || PasswordBox.Password.Length > 10)
             {
@@ -75,5 +75,6 @@ namespace KardamPetrov_12_3_ArchData
                 }
             }
         }
+
     }
 }

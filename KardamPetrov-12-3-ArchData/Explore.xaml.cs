@@ -34,7 +34,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + 1 + "','" + "Classical" + "','" + "Pantheon" + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -52,8 +52,8 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
-                SqlCommand cmd = new SqlCommand(query1, sqlCon);
+                string query = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + 1 + "','" + "Classical" + "','" + "Pantheon" + "') ";
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
 
@@ -70,7 +70,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + 2 + "','" + "Neoclassical" + "','" + "Academy of Athens" + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -88,8 +88,8 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
-                SqlCommand cmd = new SqlCommand(query1, sqlCon);
+                string query = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + 2 + "','" + "Neoclassical" + "','" + "Academy of Athens" + "') ";
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
 
@@ -106,7 +106,8 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + 3 + "','" + "Gothic" + "','" + "Notre Dame" + "') ";
+
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -124,8 +125,9 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
-                SqlCommand cmd = new SqlCommand(query1, sqlCon);
+
+                string query = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + 3 + "','" + "Gothic" + "','" + "Notre Dame" + "') ";
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
 
@@ -142,7 +144,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + 4 + "','" + "Renaissance" + "','" + "Santa Maria del Fiore Cathedral" + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -160,8 +162,8 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
-                SqlCommand cmd = new SqlCommand(query1, sqlCon);
+                string query = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + 4 + "','" + "Renaissance" + "','" + "Santa Maria del Fiore Cathedral" + "') ";
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
 
@@ -178,7 +180,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + 5 + "','" + "Brutalist" + "','" + "Habitat 67" + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -196,8 +198,8 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
-                SqlCommand cmd = new SqlCommand(query1, sqlCon);
+                string query = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + 5 + "','" + "Brutalist" + "','" + "Habitat 67" + "') ";
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
 
@@ -214,7 +216,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
+                string query = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + 6 + "','" + "Baroque" + "','" + "Versailles" + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -232,8 +234,8 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
-                SqlCommand cmd = new SqlCommand(query1, sqlCon);
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + 6 + "','" + "Baroque" + "','" + "Versailles" + "') ";
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
 
@@ -250,7 +252,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
+                string query = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + 5 + "','" + "Brutalist" + "','" + "Habitat 67" + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -268,8 +270,8 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
-                SqlCommand cmd = new SqlCommand(query1, sqlCon);
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + 5 + "','" + "Brutalist" + "','" + "Habitat 67" + "') ";
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
 
@@ -286,7 +288,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + 8 + "','" + "Art Deco" + "','" + "Chrysler Building" + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -304,8 +306,8 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
-                SqlCommand cmd = new SqlCommand(query1, sqlCon);
+                string query = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + 8 + "','" + "Art Deco" + "','" + "Chrysler Building" + "') ";
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
 

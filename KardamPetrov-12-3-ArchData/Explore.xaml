@@ -17,28 +17,45 @@
                 </Button>
                 <Label Content="EXPLORE" Foreground="White" FontSize="40" HorizontalAlignment="Center" Margin="290,0,274,0" FontFamily="Corbel Light"/>
                 <StackPanel>
-                    <Button x:Name="Fav" Height="25" Width="25" Margin="-500,0,0,0" Background="LightBlue" Click="Fav_Click" />
+                    <Button x:Name="Fav" Height="25" Width="25" Margin="-500,0,0,0" Background="LightBlue" Click="Fav_Click" RenderTransformOrigin="0.504,0.5" />
                     <Button x:Name="Sav" Height="25" Width="25" Margin="-430,-25,0,0" Background="LightPink" Click="Sav_Click" />
+                    <Image Source="D:\ArchData\Pantheon_Rom_1_cropped.jpg" Height="25" Width="25" Margin="-300,-25,0,0" RenderTransformOrigin="1.443,0.564" />
+                    <TextBox Height="16" Margin="260,-25,443.4,0" TextWrapping="Wrap" Text="Classical"/>
                     <Button x:Name="Fav1" Height="25" Width="25" Margin="-500,30,0,0" Background="LightBlue" Click="Fav1_Click" />
                     <Button x:Name="Sav1" Height="25" Width="25" Margin="-430,-25,0,0" Background="LightPink" Click="Sav1_Click"/>
+                    <Image Source="D:\ArchData\1200px-Akademie_von_Athen.jpg" Height="25" Width="25" Margin="-300,-25,0,0" RenderTransformOrigin="1.443,0.564" />
+                    <TextBox Height="16" Margin="260,-25,443.4,0" TextWrapping="Wrap" Text="Neoclassical"/>
                     <Button x:Name="Fav2" Height="25" Width="25" Margin="-500,30,0,0" Background="LightBlue" Click="Fav2_Click" />
                     <Button x:Name="Sav2" Height="25" Width="25" Margin="-430,-25,0,0" Background="LightPink" Click="Sav2_Click"/>
+                    <Image Source="D:\ArchData\GettyImages-604395517-ab3c2b6598b04fc2a9faee6def034b39.webp" Height="25" Width="25" Margin="-300,-25,0,0" RenderTransformOrigin="1.443,0.564" />
+                    <TextBox Height="16" Margin="260,-25,443.4,0" TextWrapping="Wrap" Text="Gothic"/>
                     <Button x:Name="Fav3" Height="25" Width="25" Margin="-500,30,0,0" Background="LightBlue" Click="Fav3_Click" />
                     <Button x:Name="Sav3" Height="25" Width="25" Margin="-430,-25,0,0" Background="LightPink" Click="Sav3_Click"/>
+                    <Image Source="D:\ArchData\cathedral-of-santa-maria-del-fiore-florence-scaled.webp" Height="25" Width="25" Margin="-300,-25,0,0" RenderTransformOrigin="1.443,0.564" />
+                    <TextBox Height="16" Margin="260,-25,443.4,0" TextWrapping="Wrap" Text="Renaissance"/>
 
                     <Button x:Name="Sav7" Height="25" Width="25" Margin="500,-358,0,0" Background="LightPink" Click="Sav7_Click" />
                     <Button x:Name="Fav7" Height="25" Width="25" Margin="430,-358,0,0" Background="LightBlue" Click="Fav7_Click" />
+                    <Image Source="D:\ArchData\louvre.jpg" Height="25" Width="25" Margin="300,-358,0,0" RenderTransformOrigin="1.443,0.564" />
+                    <TextBox Height="16" Width="55" Margin="460,-358,259.4,0" TextWrapping="Wrap" Text="Modern"/>
                     <Button x:Name="Sav6" Height="25" Width="25" Margin="430,-245,0,0" Background="LightBlue" Click="Sav6_Click" />
                     <Button x:Name="Fav6" Height="25" Width="25" Margin="500,-245,0,0" Background="LightPink" Click="Fav6_Click"/>
+                    <Image Source="D:\ArchData\download.jfif" Height="25" Width="25" Margin="300,-245,0,0" RenderTransformOrigin="1.443,0.564" />
+                    <TextBox Height="19" Width="55" Margin="460,-245,259.4,0" TextWrapping="Wrap" Text="Baroque"/>
                     <Button x:Name="Sav5" Height="25" Width="25" Margin="430,-135,0,0" Background="LightBlue" Click="Sav5_Click" />
                     <Button x:Name="Fav5" Height="25" Width="25" Margin="500,-135,0,0" Background="LightPink" Click="Fav5_Click"/>
+                    <Image Source="D:\ArchData\safdie-architects-habitat-67-renovation_dezeen_hero.gif" Height="25" Width="25" Margin="300,-135,0,0" RenderTransformOrigin="1.443,0.564" />
+                    <TextBox Height="18" Width="55" Margin="460,-135,259.4,0" TextWrapping="Wrap" Text="Brutalist"/>
                     <Button x:Name="Sav4" Height="25" Width="25" Margin="500,-25,0,0" Background="LightPink" Click="Sav4_Click" />
                     <Button x:Name="Fav4" Height="25" Width="25" Margin="430,-25,0,0" Background="LightBlue" Click="Fav4_Click" />
+                    <Image Source="D:\ArchData\68ebfed6-ffd4-4d8b-8609-855f460cd758.jpg" Height="25" Width="25" Margin="300,-25,0,0" RenderTransformOrigin="1.443,0.564" />
+                    <TextBox Height="18" Width="55" Margin="460,-25,259.4,0" TextWrapping="Wrap" Text="ArtDeco"/>
 
                 </StackPanel>
                 <Button Content="Favorites" Margin="0,20 ,300,0" Height="25" Width="55" Click="Button_Click"/>
                 <Button Content="Saved" Margin="0,-25,0,0" Height="25" Width="55" Click="Button_Click_1"/>
                 <Button Content="Back to Menu" Margin="0,-25,-280,0" Height="25" Width="80" Click="Button_Click2"/>
+
 
             </StackPanel>
         </Border>
