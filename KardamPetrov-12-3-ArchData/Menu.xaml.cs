@@ -19,28 +19,30 @@ namespace KardamPetrov_12_3_ArchData
     /// </summary>
     public partial class Menu : Window
     {
-        public Menu()
+        public string AccountHolder;
+        public Menu(string user)
         {
             InitializeComponent();
+            AccountHolder = user;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Explore OpenExplore = new Explore();
+            Explore OpenExplore = new Explore(AccountHolder);
             OpenExplore.Show();
             this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Favorites OpenFavorites = new Favorites();
+            Favorites OpenFavorites = new Favorites(AccountHolder);
             OpenFavorites.Show();
             this.Close();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Saved OpenSaved = new Saved();
+            Saved OpenSaved = new Saved(AccountHolder);
             OpenSaved.Show();
             this.Close();
         }

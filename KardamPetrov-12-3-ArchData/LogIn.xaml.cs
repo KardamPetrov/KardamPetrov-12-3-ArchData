@@ -48,8 +48,8 @@ namespace KardamPetrov_12_3_ArchData
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
                 if (count == 1)
                 {
-                    ChooseStudent OpenchooseStudent = new ChooseStudent();
-                    OpenchooseStudent.Show();
+                    Menu OpenMenu = new Menu(txtUsername.Text);
+                    OpenMenu.Show();
                     this.Close();
                 }
                 else

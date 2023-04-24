@@ -16,7 +16,8 @@
                     </StackPanel>
                 </Button>
                 <Label Content="&#xA;SAVED" Foreground="White" FontSize="40" HorizontalAlignment="Center" Margin="330,0,330,0" Width="131" Height="156" FontFamily="Corbel Light"/>
-                <Button Content="Button" Click="Button_Click"/>
+                <DataGrid x:Name="IME2" Height="100" />
+                <Button Content="Back to Menu" Margin="330,0,330,0" Click="Button_Click"/>
 
 
             </StackPanel>

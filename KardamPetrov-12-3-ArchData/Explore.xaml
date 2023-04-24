@@ -36,8 +36,9 @@
                     <Button x:Name="Fav4" Height="25" Width="25" Margin="430,-25,0,0" Background="LightBlue" Click="Fav4_Click" />
 
                 </StackPanel>
-                <Button Content="Favorites" Margin="0,20,0,0" Height="25" Width="55" Click="Button_Click"/>
-                <Button Content="Saved" Margin="0,10,0,0" Height="25" Width="55" Click="Button_Click_1"/>
+                <Button Content="Favorites" Margin="0,20 ,300,0" Height="25" Width="55" Click="Button_Click"/>
+                <Button Content="Saved" Margin="0,-25,0,0" Height="25" Width="55" Click="Button_Click_1"/>
+                <Button Content="Back to Menu" Margin="0,-25,-280,0" Height="25" Width="80" Click="Button_Click2"/>
 
             </StackPanel>
         </Border>

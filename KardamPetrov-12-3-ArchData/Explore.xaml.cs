@@ -21,10 +21,12 @@ namespace KardamPetrov_12_3_ArchData
     public partial class Explore : Window
     {
         public SqlConnection sqlCon = new SqlConnection(@"Data Source=THESTRIXSCAROFK; Initial Catalog=ArchData; Integrated Security=True");
+        public string AccountHolder;
 
-        public Explore()
+        public Explore(string user)
         {
             InitializeComponent();
+            AccountHolder = user;
         }
 
         private void Fav_Click(object sender, RoutedEventArgs e)
@@ -32,7 +34,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -50,7 +52,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query1, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -68,7 +70,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -86,7 +88,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query1, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -104,7 +106,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -122,7 +124,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query1, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -140,7 +142,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -158,7 +160,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query1, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -176,7 +178,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -194,7 +196,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query1, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -212,7 +214,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -230,7 +232,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query1, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -248,7 +250,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -266,7 +268,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query1, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -284,7 +286,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query = "INSERT INTO Favorites ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query = "INSERT INTO Favorites ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -302,7 +304,7 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon.Open();
-                string query1 = "INSERT INTO Saved ([Username],[Email],[password],[Repeat Password]) values ('" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password + "','" + this.RePasswordBox.Password + "') ";
+                string query1 = "INSERT INTO Saved ([ID],[Style],[Example]) values ('" + this.txtID.Text + "','" + this.txtStyle.Text + "','" + this.txtExample.Text + "') ";
                 SqlCommand cmd = new SqlCommand(query1, sqlCon);
 
                 cmd.ExecuteNonQuery();
@@ -317,15 +319,22 @@ namespace KardamPetrov_12_3_ArchData
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Favorites OpenFav = new Favorites();
+            Favorites OpenFav = new Favorites(AccountHolder);
             OpenFav.Show();
             this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Saved OpenSav = new Saved();
+            Saved OpenSav = new Saved(AccountHolder);
             OpenSav.Show();
+            this.Close();
+        }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            Menu OpenMenu = new Menu(AccountHolder);
+            OpenMenu.Show();
             this.Close();
         }
     }

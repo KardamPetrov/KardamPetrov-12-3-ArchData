@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,9 +22,11 @@ namespace KardamPetrov_12_3_ArchData
 
     public partial class Favorites : Window
     {
-        public Favorites()
+         public string AccountHolder;
+         public Favorites(string user)
         {
             InitializeComponent();
+            AccountHolder=user;
             neshto();
         }
 
@@ -36,13 +39,13 @@ namespace KardamPetrov_12_3_ArchData
             try
             {
                 sqlCon_.Open();
-                string query = "Select Email,FirstName from SignupTable_";
+                string query = "Select * from Favorites";
                 SqlCommand cmd = new SqlCommand(query, sqlCon_);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
-                DataGrid_.ItemsSource = dt.DefaultView;
+                IME.ItemsSource = dt.DefaultView;
                 adapter.Update(dt);
 
                 MessageBox.Show("Successful loading");
@@ -54,6 +57,13 @@ namespace KardamPetrov_12_3_ArchData
 
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Menu OpenMenu = new Menu(AccountHolder);
+            OpenMenu.Show();
+            this.Close();
         }
     }
 }

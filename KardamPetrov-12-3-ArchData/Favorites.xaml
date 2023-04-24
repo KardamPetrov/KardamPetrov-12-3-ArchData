@@ -17,7 +17,8 @@
                 </Button>
                 <Label Content="&#xA;FAVORITES" Foreground="White" FontSize="40" HorizontalAlignment="Center" Margin="280,0,265,0" Width="199" Height="156" FontFamily="Corbel Light"/>
 
-                <DataGrid Height="100" SelectionChanged="DataGrid_SelectionChanged"/>
+                <DataGrid x:Name="IME"  Height="100" />
+                <Button Content="Back to Menu" Margin="330,0,330,0" Click="Button_Click"/>
 
 
             </StackPanel>
