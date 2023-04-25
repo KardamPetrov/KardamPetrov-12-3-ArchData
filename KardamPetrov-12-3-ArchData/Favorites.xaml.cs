@@ -33,7 +33,7 @@ namespace KardamPetrov_12_3_ArchData
 
         void neshto ()
         {
-            string dbsCon = @"Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=SignUpDB; Integrated Security=True";
+            string dbsCon = @"Data Source=THESTRIXSCAROFK; Initial Catalog=ArchData; Integrated Security=True";
             SqlConnection sqlCon_ = new SqlConnection(dbsCon);
 
             try
